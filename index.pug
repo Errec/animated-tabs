@@ -7,8 +7,31 @@ html(lang="en")
     title
     meta(name="description" content="")
     link(rel="stylesheet" href="css/main.min.css")
-    //[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]
 
   body
-    h1 Hello World!
+    div.wrapper
+      ul#tab-group-1.tab-group
+        li
+          a(href="#tab1") Lets
+        li
+          a(href="#tab2") Animate
+        li
+          a(href="#tab3") These
+        li
+          a(href="#tab4") Tabs
+
+      div.tab-content
+        div#tab1
+          h1 Title 1
+          p Some content here
+        div#tab2
+          h1 Title 2
+          p Some content here
+        div#tab3
+          h1 Title 3
+          p Some content here
+        div#tab4
+          h1 Title 4
+          p Some content here
+
     script(src="js/bundle.min.js")
