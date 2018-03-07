@@ -1,0 +1,23 @@
+#tab-group-1
+  li
+    background-color: red
+    padding: 12px 16px 8px 16px
+    overflow: hidden
+    border-radius: 3px 3px 0 0
+    &:after
+      z-index: 0
+      content: ""
+      position: absolute
+      background-color: blue
+      left: 0
+      right: 0
+      top: 0
+      bottom: 0
+      transform: translateY(90%)
+      transition: transform 0.2s ease-in-out
+  .selected
+    &:after
+      transform: translateY(0)
+
+
+
