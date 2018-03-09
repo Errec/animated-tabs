@@ -11,14 +11,14 @@ html(lang="en")
   body
     div.wrapper
       ul#tab-group-1.tab-group
-        li.selected
-          a(href="#tab1") Lets
-        li
-          a(href="#tab2") Animate
-        li
-          a(href="#tab3") These
-        li
-          a(href="#tab4") Tabs
+        li.selected(data-tab="1")
+          a(href="#tab1" data-tab="1") Lets
+        li(data-tab="2")
+          a(href="#tab2" data-tab="2") Animate
+        li(data-tab="3")
+          a(href="#tab3" data-tab="3") These
+        li(data-tab="4")
+          a(href="#tab4" data-tab="4") Tabs
 
       div.tab-content
         div#tab1
