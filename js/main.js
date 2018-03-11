@@ -1,13 +1,14 @@
 "use strict";
 var initTabs = (function () {
-  var tabGroup1  = document.getElementById("tab-group-1");
-  var tabs1      = document.querySelectorAll("#tab-group-1 > li");
-  var tabSlected = tabs1[0];
+  var tabGroup0  = document.getElementById("tab-group-0");
+  var tabs0      = document.querySelectorAll("#tab-group-0 > li");
+  var tabSlected = tabs0[0];
 
-  tabGroup1.addEventListener('click', function (e) {
-    console.log("target", e.target.dataset.tab);
-    console.log("current target", e.currentTarget.dataset.tab);
-    console.log('===================================================');
-    e.stopPropagation();
+  tabGroup0.addEventListener('click', function (e) {
+    if (e.target.dataset.tab && (tabSlected.dataset.tab !== e.target.dataset.tab)) {
+      tabSlected.classList.remove('selected');
+      tabSlected = tabs0[parseInt(e.target.dataset.tab)];
+      tabSlected.classList.add('selected');
+    }
   });
 })();

@@ -10,17 +10,20 @@ html(lang="en")
 
   body
     div.wrapper
-      ul#tab-group-1.tab-group
-        li.selected(data-tab="1")
-          a(href="#tab1" data-tab="1") Lets
+      ul#tab-group-0.tab-group
+        li.selected(data-tab="0")
+          a(href="#tab0" data-tab="0") Lets
+        li(data-tab="1")
+          a(href="#tab1" data-tab="1") Animate
         li(data-tab="2")
-          a(href="#tab2" data-tab="2") Animate
+          a(href="#tab2" data-tab="2") These
         li(data-tab="3")
-          a(href="#tab3" data-tab="3") These
-        li(data-tab="4")
-          a(href="#tab4" data-tab="4") Tabs
+          a(href="#tab3" data-tab="3") Tabs
 
       div.tab-content
+        div#tab0
+          h1 Title 0
+          p Some content here
         div#tab1
           h1 Title 1
           p Some content here
@@ -29,9 +32,6 @@ html(lang="en")
           p Some content here
         div#tab3
           h1 Title 3
-          p Some content here
-        div#tab4
-          h1 Title 4
           p Some content here
 
     script(src="js/bundle.min.js")
