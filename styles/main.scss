@@ -18,10 +18,20 @@ h1, h2, h3
   li
     position: relative
     cursor: pointer
-  a
+  p
     position: relative
     z-index: 1;
     text-decoration: none
     color: white
 
+.wrapper
+  max-width: 800px
+  background-color: pink
+  position: absolute
+  top: 12px
+  right: 0
+  left: 0
+  margin: 0 auto
+
+@import 'content'
 @import 'tabgroup1'
