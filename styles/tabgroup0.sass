@@ -1,25 +1,20 @@
-#tab-group-1
+#tab-group-0
   li
-    background-color: blue
+    background-color: red
     padding: 12px 16px 8px 16px
     overflow: hidden
     border-radius: 3px 3px 0 0
-    p
-      background-color: red
     &:after
       z-index: 0
       content: ""
       position: absolute
-      background-color: red
+      background-color: blue
       left: 0
       right: 0
       top: 0
       bottom: 0
-      width: 100%
-      height: 100%
-      margin: auto
-      transition: all 0.3s ease-in-out
+      transform: translateY(90%)
+      transition: transform 0.2s ease-in-out
   .selected
     &:after
-      height: 0
-      width: 0
+      transform: translateY(0)

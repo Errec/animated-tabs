@@ -10,6 +10,7 @@ h1, h2, h3
   padding: 0
 
 .tab-group
+  margin-bottom: 12px
   display: flex
   flex-direction: row
   list-style: none
@@ -34,4 +35,5 @@ h1, h2, h3
   margin: 0 auto
 
 @import 'content'
+@import 'tabgroup0'
 @import 'tabgroup1'
