@@ -5,7 +5,8 @@
     overflow: hidden
     border-radius: 3px 3px 0 0
     p
-      background-color: blue
+      color: blue
+      transition: all 0.3s ease-in-out
     &:after
       z-index: 0
       content: ""
@@ -20,6 +21,8 @@
       margin: auto
       transition: all 0.3s ease-in-out
   .selected
+    p
+      color: red
     &:after
       height: 0
       width: 0
